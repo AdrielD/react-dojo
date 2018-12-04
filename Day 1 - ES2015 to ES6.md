@@ -4,37 +4,31 @@
 *let and const, spread operator, param defaults, arrow functions, etc.*
 <br/>
 
-a)
 ```javascript
 var alwaysTrue = function() { return true };
 ```
 <br/>
 
-b)
 ```javascript
 var double = function(n) { return n * 2 };
 ```
 <br/>
 
-c)
 ```javascript
 var compare = function(a, b) { return (a >= b) ? a : b; };
 ```
 <br/>
 
-d)
 ```javascript
 var buildMultiplication = function(factor) { return function(n) { return n * factor } };
 ```
 <br/>
 
-e)
 ```javascript
 setInterval(function() { console.log("hi!") }, 1000);
 ```
 <br/>
 
-f)
 ```javascript
 var buildPotato = function(name, cookMethod) {
     return {
@@ -45,7 +39,6 @@ var buildPotato = function(name, cookMethod) {
 ```
 <br/>
 
-g)
 ```javascript
 var defaults = function() {
     var defaultAge = 30;
@@ -58,14 +51,12 @@ var defaults = function() {
 ```
 <br/>
 
-h)
 ```javascript
 var times = 10;
 "Hello World, 10 times!" === "Hello " + "World, " + times + " times!"; //true
 ```
 <br/>
 
-i)
 ```javascript
 var options = function(options) {
     return { name: options.name, age: options.age, profession: options.profession };
@@ -73,7 +64,6 @@ var options = function(options) {
 ```
 <br/>
 
-j)
 ```javascript
 var array1 = [1, 2, 3, 4, 5];
 var array2 = [];
@@ -86,7 +76,6 @@ array1 === array2; //false
 ```
 <br/>
 
-k)
 ```javascript
 var obj = { name: "potato", color: "yellow" };
 var obj2 = obj1;
