@@ -1,7 +1,8 @@
-**Change the expressions below to ES6 notation.**
+*Change the expressions below to ES6 notation.*
 
-***Try using, as much as possible: function and object shorthands, string interpolations,***
-***let and const, spread operator, param defaults, arrow functions, etc.***
+**Try using, as much as possible: function and object shorthands, string interpolations,**
+**let and const, spread operator, param defaults, arrow functions, etc.**
+
 
 a)
     ```
