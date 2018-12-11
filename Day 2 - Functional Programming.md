@@ -12,7 +12,7 @@ const input = [1, 2, 3, 4, 5];
 <summary>Possible solution</summary>
 
 ```javascript
-input.map(x => x * 10);
+const output = input.map(x => x * 10);
 ```
 </details>
 </br>
@@ -25,7 +25,7 @@ const input = [1, 2, 3, 4, 5];
 <summary>Possible solution</summary>
 
 ```javascript
-input.reduce((acc, value) => acc + value);
+const output = input.reduce((acc, value) => acc + value);
 ```
 </details>
 </br>
@@ -38,7 +38,7 @@ const input = [1, 2, 3, 4, 5];
 <summary>Possible solution</summary>
 
 ```javascript
-input.filter(value => value % 2);
+const output = input.filter(value => value % 2);
 ```
 </details>
 </br>
@@ -51,7 +51,7 @@ const input = { a: "potato", b: "tomato", c: "lettuce" };
 <summary>Possible solution</summary>
 
 ```javascript
-Object.keys(input).reduce((acc, key) => ({ ...acc, [input[key]]: key }), {});
+const output = Object.keys(input).reduce((acc, key) => ({ ...acc, [input[key]]: key }), {});
 ```
 </details>
 </br>
@@ -64,9 +64,9 @@ const input = { abc: 101, def: 3, ghi: 57, jkl: 222, mno: 100 };
 <summary>Possible solution</summary>
 
 ```javascript
-Object.keys(input)
-  .filter(key => input[key] <= 100)
-  .map(key => input[key]);
+const output = Object.keys(input)
+                .filter(key => input[key] <= 100)
+                .map(key => input[key]);
 ```
 </details>
 </br>
@@ -86,7 +86,41 @@ const input = {
 const grantAccess = (name, level) => (`${name} has ${level} access`);
 const blockAccess = name => (`${name} is not allowed`);
 
-Object.keys(input)
-  .map(key => (input[key].allowed ? grantAccess(key, input[key].access) : blockAccess(key)));
+const output = Object.keys(input)
+                 .map(key => (input[key].allowed ? grantAccess(key, input[key].access) : blockAccess(key)));
+```
+</details>
+</br>
+
+```javascript
+const input = [
+  { framework: "react", message: "is awesome!", note: 10 },
+  { framework: "angular", message: "meh", note: 4 },
+  { framework: "vue", message: "seems cool...", note: 6 },
+  { framework: "rails", message: "best friend!", note: 9 },
+  { framework: "sinatra", message: "maybe one day", note: 7 }
+];
+// output: { react: "is aewsome!", rails: "best friend!" }
+```
+<details>
+<summary>Possible solution</summary>
+
+```javascript
+const output = input
+                .filter(hash => (hash.note > 7))
+                .reduce((acc, hash) => ({ ...acc, [hash.framework]: hash.message }), {});
+```
+</details>
+</br>
+
+```javascript
+const input = { item: { category: { name: "Playing Cards", code: 666 }, qty: 10 }, costumer: "Leonidas" }
+// output: { item: { category: { name: "War Games", code: 666 }, qty: 10 }, costumer: "Leonidas" }
+```
+<details>
+<summary>Possible solution</summary>
+
+```javascript
+const output = { ...input, item: { ...input.item, category: { ...input.item.category, name: "War Games" } } }
 ```
 </details>
