@@ -87,6 +87,6 @@ const grantAccess = (name, level) => (`${name} has ${level} access`);
 const blockAccess = name => (`${name} is not allowed`);
 
 Object.keys(input)
-  .map(key => (input[key].allowed? grantAccess(key, input[key].access) : blockAccess(key)));
+  .map(key => (input[key].allowed ? grantAccess(key, input[key].access) : blockAccess(key)));
 ```
 </details>
