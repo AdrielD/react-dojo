@@ -14,7 +14,7 @@ var alwaysTrue = function() { return true };
 const alwaysTrue = () => true;
 ```
 </details>
-</hr>
+</br>
 
 ```javascript
 var double = function(n) { return n * 2 };
