@@ -7,27 +7,22 @@
 ```javascript
 var alwaysTrue = function() { return true };
 ```
-<br/>
 
 ```javascript
 var double = function(n) { return n * 2 };
 ```
-<br/>
 
 ```javascript
 var compare = function(a, b) { return (a >= b) ? a : b; };
 ```
-<br/>
 
 ```javascript
 var buildMultiplication = function(factor) { return function(n) { return n * factor } };
 ```
-<br/>
 
 ```javascript
 setInterval(function() { console.log("hi!") }, 1000);
 ```
-<br/>
 
 ```javascript
 var buildPotato = function(name, cookMethod) {
@@ -37,7 +32,6 @@ var buildPotato = function(name, cookMethod) {
     };
 }
 ```
-<br/>
 
 ```javascript
 var defaults = function() {
@@ -49,20 +43,17 @@ var defaults = function() {
     }
 };
 ```
-<br/>
 
 ```javascript
 var times = 10;
 "Hello World, 10 times!" === "Hello " + "World, " + times + " times!"; //true
 ```
-<br/>
 
 ```javascript
 var options = function(options) {
     return { name: options.name, age: options.age, profession: options.profession };
 };
 ```
-<br/>
 
 ```javascript
 var array1 = [1, 2, 3, 4, 5];
@@ -74,11 +65,9 @@ array1 === array2; //true
 array2[2] = 10;
 array1 === array2; //false
 ```
-<br/>
 
 ```javascript
 var obj = { name: "potato", color: "yellow" };
 var obj2 = obj1;
 obj2.state = "fried";
 ```
-<br/>
